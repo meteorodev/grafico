@@ -15,6 +15,7 @@ oficial web site : https://www.chartjs.org/
 - npm install bootstrap --save
 - npm install chart.js --save
 - npm install ng2-charts --save
+- npm install font-awesome --save
 
 
 ### Configure chartjs and boostrap
