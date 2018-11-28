@@ -7,30 +7,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Enviroment
-Package                           Version
------------------------------------------------------------
-@angular-devkit/architect         0.10.7
-@angular-devkit/build-angular     0.10.7
-@angular-devkit/build-optimizer   0.10.7
-@angular-devkit/build-webpack     0.10.7
-@angular-devkit/core              7.0.7
-@angular-devkit/schematics        7.0.7
-@angular/cli                      7.0.7
-@ngtools/webpack                  7.0.7
-@schematics/angular               7.0.7
-@schematics/update                0.10.7
-rxjs                              6.3.3
-typescript                        3.1.6
-webpack                           4.19.1
 
 | Package   |  Version |
 |---|:-:|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|Angular CLI   | 7.0.7  |
+| Node  | 10.13.0  |
+|Angular|7.0.4|
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
