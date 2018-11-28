@@ -1,11 +1,6 @@
 # Grafico
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
+This is a test for 2 charts library in angular 7.0, for the basic implematation:
 ## Enviroment
 
 | Package   |  Version |
@@ -13,22 +8,62 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 |Angular CLI   | 7.0.7  |
 | Node  | 10.13.0  |
 |Angular|7.0.4|
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## intructions for chart.js:
+oficial web site : https://www.chartjs.org/
+### install
+- npm install bootstrap --save
+- npm install chart.js --save
+- npm install ng2-charts --save
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Configure chartjs and boostrap
 
-## Running unit tests
+Add in angular.json file 
+styles secction like this
+"styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.css",
+    "./node_modules/font-awesome/css/font-awesome.css",
+    "src/styles.scss"
+],
+script section like this
+"scripts": [ "./node_modules/chart.js/dist/Chart.min.js" ]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+add module in your app.module.ts file and import this
+import { ChartsModule } from 'ng2-charts/ng2-charts';
 
-## Running end-to-end tests
+and into imports section 
+imports: [
+    BrowserModule,
+    ChartsModule,
+],
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## instructions for ngx-chart
+oficial web site : https://swimlane.gitbook.io/ngx-charts
+### install 
+- npm install @swimlane/ngx-charts --save
 
-## Further help
+### configure 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+add module in your app.module.ts file and import this
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+and into imports section
+
+imports: [
+    BrowserModule,
+    NgxChartsModule,
+]
+
+for data and options refer to oficial web sites
+
+https://www.chartjs.org/
+
+https://swimlane.gitbook.io/ngx-charts
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
